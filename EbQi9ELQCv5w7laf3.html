@@ -1,0 +1,275 @@
+<html><head><base href="https://freelancesuccess.io/courses/client-retention/enroll"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreelanceSuccess - Inscription au cours de Fidélisation et Gestion de la Clientèle</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-color: #ff6b6b;
+        --secondary-color: #4ecdc4;
+        --bg-color: #2f3542;
+        --text-color: #f1f2f6;
+        --card-bg: #3a4152;
+        --highlight-color: #feca57;
+        --nav-bg: #222831;
+        --error-color: #ff4757;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+    }
+    header {
+        background-color: var(--nav-bg);
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .nav-menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu li {
+        margin-left: 20px;
+    }
+    .nav-menu li a {
+        color: var(--text-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .nav-menu li a:hover {
+        color: var(--primary-color);
+    }
+    main {
+        max-width: 800px;
+        margin: 100px auto 0;
+        padding: 20px;
+    }
+    h1 {
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .enrollment-form {
+        background-color: var(--card-bg);
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+    .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: var(--secondary-color);
+    }
+    .course-summary {
+        background-color: var(--card-bg);
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+    }
+    .course-summary h2 {
+        color: var(--secondary-color);
+        margin-top: 0;
+    }
+    .price {
+        font-size: 1.5em;
+        color: var(--highlight-color);
+        margin: 10px 0;
+    }
+    footer {
+        background-color: var(--nav-bg);
+        color: var(--text-color);
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+    .error {
+        color: var(--error-color);
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FreelanceSuccess</div>
+            <ul class="nav-menu">
+                <li><a href="https://freelancesuccess.io/">Accueil</a></li>
+                <li><a href="https://freelancesuccess.io/courses">Cours</a></li>
+                <li><a href="https://freelancesuccess.io/community">Communauté</a></li>
+                <li><a href="https://freelancesuccess.io/about">À propos</a></li>
+                <li><a href="https://freelancesuccess.io/login" class="btn">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Inscription au cours de Fidélisation et Gestion de la Clientèle</h1>
+        
+        <form class="enrollment-form" action="https://freelancesuccess.io/courses/client-retention/process-enrollment" method="POST">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession</label>
+                <input type="text" id="profession" name="profession" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Années d'expérience en freelance</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Sélectionnez</option>
+                    <option value="0-1">0-1 an</option>
+                    <option value="1-3">1-3 ans</option>
+                    <option value="3-5">3-5 ans</option>
+                    <option value="5+">Plus de 5 ans</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="goals">Vos objectifs pour ce cours</label>
+                <textarea id="goals" name="goals" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">S'inscrire maintenant</button>
+        </form>
+
+        <div class="course-summary">
+            <h2>Résumé du cours</h2>
+            <p>Titre : Fidélisation et Gestion de la Clientèle</p>
+            <p>Durée : 11 heures de contenu</p>
+            <p>Instructeur : Emma Dupont</p>
+            <p class="price">Prix : 299€</p>
+            <p>Ce cours vous donnera les outils nécessaires pour transformer vos clients ponctuels en partenaires à long terme, augmentant ainsi votre stabilité financière et votre réputation professionnelle.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FreelanceSuccess. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const form = document.querySelector('.enrollment-form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isValid = true;
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const professionInput = document.getElementById('profession');
+            const experienceInput = document.getElementById('experience');
+            const goalsInput = document.getElementById('goals');
+
+            // Simple validation
+            if (nameInput.value.trim() === '') {
+                showError(nameInput, 'Le nom est requis');
+                isValid = false;
+            }
+            if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value)) {
+                showError(emailInput, 'Email invalide');
+                isValid = false;
+            }
+            if (professionInput.value.trim() === '') {
+                showError(professionInput, 'La profession est requise');
+                isValid = false;
+            }
+            if (experienceInput.value === '') {
+                showError(experienceInput, 'Veuillez sélectionner votre expérience');
+                isValid = false;
+            }
+            if (goalsInput.value.trim() === '') {
+                showError(goalsInput, 'Veuillez partager vos objectifs');
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Inscription réussie ! Bienvenue dans le cours de Fidélisation et Gestion de la Clientèle. Vous recevrez bientôt un email de confirmation.');
+                form.reset();
+            }
+        });
+
+        function showError(input, message) {
+            const formGroup = input.parentElement;
+            let error = formGroup.querySelector('.error');
+            if (!error) {
+                error = document.createElement('div');
+                error.className = 'error';
+                formGroup.appendChild(error);
+            }
+            error.textContent = message;
+        }
+
+        function isValidEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Easter egg
+        let typingTimer;
+        const doneTypingInterval = 1000;
+        const emailInput = document.getElementById('email');
+
+        emailInput.addEventListener('keyup', () => {
+            clearTimeout(typingTimer);
+            if (emailInput.value) {
+                typingTimer = setTimeout(doneTyping, doneTypingInterval);
+            }
+        });
+
+        function doneTyping() {
+            if (emailInput.value.toLowerCase().includes('vip')) {
+                alert("🌟 Code VIP détecté ! Vous bénéficiez d'une réduction de 20% sur ce cours. Le prix sera ajusté lors du paiement.");
+            }
+        }
+    });
+    </script>
+</body></html>

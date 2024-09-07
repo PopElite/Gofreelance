@@ -1,0 +1,221 @@
+<html><head><base href="https://freelancesuccess.io/courses/negotiation-mastery/enroll"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreelanceSuccess - Inscription au cours L'Art de la Négociation</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --primary-color: #ff6b6b;
+        --secondary-color: #4ecdc4;
+        --bg-color: #2f3542;
+        --text-color: #f1f2f6;
+        --card-bg: #3a4152;
+        --highlight-color: #feca57;
+        --nav-bg: #222831;
+        --error-color: #ff4757;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-color);
+    }
+    header {
+        background-color: var(--nav-bg);
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+    .nav-menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu li {
+        margin-left: 20px;
+    }
+    .nav-menu li a {
+        color: var(--text-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .nav-menu li a:hover {
+        color: var(--primary-color);
+    }
+    main {
+        max-width: 800px;
+        margin: 100px auto 0;
+        padding: 20px;
+    }
+    h1 {
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .enrollment-form {
+        background-color: var(--card-bg);
+        padding: 30px;
+        border-radius: 8px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+    }
+    .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: var(--secondary-color);
+    }
+    .course-summary {
+        background-color: var(--card-bg);
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+    }
+    .course-summary h2 {
+        color: var(--secondary-color);
+    }
+    footer {
+        background-color: var(--nav-bg);
+        color: var(--text-color);
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FreelanceSuccess</div>
+            <ul class="nav-menu">
+                <li><a href="https://freelancesuccess.io/">Accueil</a></li>
+                <li><a href="https://freelancesuccess.io/courses">Cours</a></li>
+                <li><a href="https://freelancesuccess.io/community">Communauté</a></li>
+                <li><a href="https://freelancesuccess.io/about">À propos</a></li>
+                <li><a href="https://freelancesuccess.io/login" class="btn">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Inscription au cours : L'Art de la Négociation</h1>
+        <form class="enrollment-form" method="POST" action="https://freelancesuccess.io/courses/negotiation-mastery/process-enrollment">
+            <div class="form-group">
+                <label for="fullname">Nom complet</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Niveau d'expérience en négociation</label>
+                <select id="experience" name="experience" required>
+                    <option value="">Sélectionnez votre niveau</option>
+                    <option value="beginner">Débutant</option>
+                    <option value="intermediate">Intermédiaire</option>
+                    <option value="advanced">Avancé</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="goals">Objectifs pour ce cours</label>
+                <input type="text" id="goals" name="goals" placeholder="Ex: Améliorer mes techniques de négociation de tarifs">
+            </div>
+            <button type="submit" class="btn">S'inscrire maintenant</button>
+        </form>
+
+        <div class="course-summary">
+            <h2>Récapitulatif du cours</h2>
+            <p><strong>Titre :</strong> L'Art de la Négociation pour Freelances</p>
+            <p><strong>Durée :</strong> 10 heures de contenu</p>
+            <p><strong>Prix :</strong> 299€</p>
+            <p><strong>Inclus :</strong> Accès illimité au contenu, certificat à l'achèvement</p>
+            <p><strong>Instructeur :</strong> Jean Dupont, Expert en négociation</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 FreelanceSuccess. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const form = document.querySelector('.enrollment-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulating form submission
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const experience = document.getElementById('experience').value;
+            const goals = document.getElementById('goals').value;
+
+            if (fullname && email && experience) {
+                alert(`Merci pour votre inscription, ${fullname} ! Un e-mail de confirmation a été envoyé à ${email}. Bienvenue dans notre cours sur l'Art de la Négociation !`);
+                // Here you would typically send this data to the server
+            } else {
+                alert("Veuillez remplir tous les champs obligatoires.");
+            }
+        });
+
+        // Easter egg
+        let typingTimer;
+        const doneTypingInterval = 1000; // 1 second
+        const goalsInput = document.getElementById('goals');
+
+        goalsInput.addEventListener('keyup', () => {
+            clearTimeout(typingTimer);
+            if (goalsInput.value) {
+                typingTimer = setTimeout(doneTyping, doneTypingInterval);
+            }
+        });
+
+        function doneTyping() {
+            if (goalsInput.value.toLowerCase().includes("million") || goalsInput.value.toLowerCase().includes("millionaire")) {
+                alert("Conseil bonus : La vraie richesse se mesure en impact positif et en relations solides. Mais avec les bonnes compétences en négociation, qui sait où cela peut vous mener ? 😉");
+            }
+        }
+    });
+    </script>
+</body></html>
